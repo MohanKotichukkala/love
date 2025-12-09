@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Anjhu 🎉</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 420px;
+            width: 90%;
+            border-radius: 18px;
+            padding: 24px 20px 28px;
+            text-align: center;
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+            backdrop-filter: blur(8px);
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #ff4b6e;
+            background: #ffe4ec;
+            padding: 4px 10px;
+            border-radius: 999px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 14px;
+            color: #444;
+        }
+
+        .line {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 6px;
+        }
+
+        .highlight-name {
+            font-weight: 700;
+            color: #ff3366;
+        }
+
+        .heart {
+            font-size: 22px;
+            margin: 12px 0 4px;
+        }
+
+        .from {
+            margin-top: 16px;
+            font-size: 13px;
+            color: #777;
+        }
+
+        .from span {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .btn {
+            margin-top: 18px;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 999px;
+            border: none;
+            cursor: pointer;
+            background: #ff4b6e;
+            color: white;
+            box-shadow: 0 10px 20px rgba(255, 75, 110, 0.35);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 26px rgba(255, 75, 110, 0.45);
+        }
+
+        .hidden-message {
+            margin-top: 14px;
+            font-size: 13px;
+            color: #444;
+            display: none;
+        }
+
+        .footer-note {
+            margin-top: 18px;
+            font-size: 11px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="tag">Birthday Special</div>
+
+    <h1>Happy Birthday <span class="highlight-name">Anjhu</span> 🎂</h1>
+    <h2>Wishing you all the happiness today!</h2>
+
+    <p class="line">Nee presence valla normal days kuda special aipothayi.</p>
+    <p class="line">Nee smile chusthe anni tensions side ki pothayi.</p>
+    <p class="line">I roju anni santoshalu ninnu chuttu tirugutunnayi ani korukuntunna.</p>
+    <p class="line">God bless you with love, success and endless laughter.</p>
+
+    <div class="heart">💝</div>
+
+    <p class="from">With lots of love,<br><span>Your Unexpected Pumpkinnn🎃</span> 💫</p>
+    <!-- "your friend" place lo mee peru rayachu -->
+
+    <button class="btn" onclick="showMessage()">Click for a small surprise ✨</button>
+
+    <p id="secret" class="hidden-message">
+        No matter how busy life gets, remember:  
+        you are important, you are special, and  
+        I’m always rooting for you, <span class="highlight-name">birthday girl</span> 💖
+    </p>
+
+    <p class="footer-note">Made with ❤️ just for you, Anjhu.</p>
+</div>
+
+<script>
+    function showMessage() {
+        var msg = document.getElementById("secret");
+        if (msg.style.display === "block") {
+            msg.style.display = "none";
+        } else {
+            msg.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
